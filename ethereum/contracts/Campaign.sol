@@ -42,8 +42,11 @@ contract Campaign {
     function contribute() public payable {
         require(msg.value > minimumContribution);
         
+        if(!approvers[msg.sender]) {
+            approversCount++;
+        }
+    
         approvers[msg.sender] = true;
-        approversCount++;
     }
     
     function createRequest(string description, uint value, address recipient) public restricted {
@@ -83,7 +86,7 @@ contract Campaign {
     ) {
         return (
             minimumContribution,
-            this.balance,
+            address(this).balance,
             requests.length,
             approversCount,
             manager

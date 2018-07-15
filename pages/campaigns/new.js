@@ -50,7 +50,7 @@ class CampaignNew extends Component {
             />
           </Form.Field>
 
-          <Message error header="Fuck!" content={this.state.errorMessage} />
+          <Message error header="F*ck!" content={this.state.errorMessage} />
           <Button loading={this.state.loading} primary>
             Create!
           </Button>
