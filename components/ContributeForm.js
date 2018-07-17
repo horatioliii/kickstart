@@ -45,7 +45,7 @@ class ContributeForm extends Component {
             labelPosition="right"
           />
         </Form.Field>
-        <Message error header="F*ck!" content={this.state.errorMessage} />
+        <Message error header="Noooooo!" content={this.state.errorMessage} />
         <Button loading={this.state.loading} primary>
           Contribute!
         </Button>

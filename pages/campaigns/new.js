@@ -41,7 +41,7 @@ class CampaignNew extends Component {
           <Form.Field>
             <label>Minimum Contribution</label>
             <Input
-              label="wei"
+              label="Wei"
               labelPosition="right"
               value={this.state.minimumContribution}
               onChange={event =>
@@ -50,7 +50,7 @@ class CampaignNew extends Component {
             />
           </Form.Field>
 
-          <Message error header="F*ck!" content={this.state.errorMessage} />
+          <Message error header="Nooooo!" content={this.state.errorMessage} />
           <Button loading={this.state.loading} primary>
             Create!
           </Button>

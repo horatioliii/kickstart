@@ -64,6 +64,8 @@ class RequestNew extends Component {
             <Input
               value={this.state.value}
               onChange={event => this.setState({ value: event.target.value })}
+              label="ETH"
+              labelPosition="right"
             />
           </Form.Field>
           <Form.Field>
@@ -76,7 +78,7 @@ class RequestNew extends Component {
             />
           </Form.Field>
 
-          <Message error header="F*ck!" content={this.state.errorMessage} />
+          <Message error header="Nooooo!" content={this.state.errorMessage} />
           <Button loading={this.state.loading} primary>
             Create!
           </Button>
